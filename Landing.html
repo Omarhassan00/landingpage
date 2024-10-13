@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./LandingPage.css" />
+    <title>Landing</title>
+  </head>
+
+  <body>
+    <div class="container-door">
+      <div class="land-door1"></div>
+      <div class="land-door2"></div>
+      <div class="land-bg-container">
+        <div class="land-bg1"></div>
+        <div class="land-bg2"></div>
+      </div>
+      <div class="door-txt">
+        <b>
+          <h2>
+            Coming <br />
+            Soon
+          </h2>
+        </b>
+      </div>
+      <div class="cont_btn">
+        <p>
+          <span style="color: rgb(106, 0, 204);font-weight: 600;font-size: 2rem;text-shadow: -1px -1px 0px #fff;">Lorem, ipsum</span> 
+          <br><br>
+          dolor sit amet consectetur adipisicing elit. Optio
+          perferendis veniam sint temporibus illum culpa, provident asperiores
+          inventore, non totam et. Reprehenderit sapiente fuga porro expedita
+          molestiae ex nisi quos?
+        </p>
+        <br>
+        <button type="button" class="Get_Started">Get Started</button>
+      </div>
+    </div>
+
+    <script>
+        const GetStarted = document.querySelector(".Get_Started");
+        const ContainerDoor = document.querySelector(".container-door");
+        const LandDoor1 = document.querySelector(".land-door1");
+        const LandDoor2 = document.querySelector(".land-door2");
+        const LandBg1 = document.querySelector(".land-bg1");
+        const LandBg2 = document.querySelector(".land-bg2");
+        const DoorTxt = document.querySelector(".door-txt");
+        const ContBtn = document.querySelector(".cont_btn");
+        GetStarted.addEventListener("click", () => {
+            // GetStarted.classList.toggle("active");
+            ContainerDoor.classList.toggle("active");
+            LandDoor1.classList.toggle("active");
+            LandDoor2.classList.toggle("active");
+            LandBg1.classList.toggle("active");
+            LandBg2.classList.toggle("active");
+            DoorTxt.classList.toggle("active");
+            ContBtn.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
